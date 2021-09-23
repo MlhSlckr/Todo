@@ -1,0 +1,165 @@
+@import url("reset.css");
+.container {
+  margin: 50px auto;
+  width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.text-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.text-add .input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding-right: 40px;
+  font-size: 20px;
+}
+
+.text-add .add {
+  cursor: pointer;
+  background-color: #9c61d6;
+  height: 40px;
+  width: 40px;
+  border-radius: 0 5px 5px 0;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.text-add .add:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.texts {
+  background-color: #9c61d6;
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.texts .note {
+  padding: 8px 12px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.texts .note:last-child {
+  margin-bottom: 0px;
+}
+
+.texts .note .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.texts .note .content .check {
+  width: 15px;
+  height: 15px;
+}
+
+.texts .note .content .check:checked ~ .note-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.texts .note .content .note-text {
+  margin-left: 5px;
+}
+
+.far {
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.far:hover {
+  background-color: #9c61d6;
+  color: #fff;
+}
+
+.todo_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todo_left input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.todo_left input:checked ~ .todo_text {
+  text-decoration: line-through;
+  color: gray;
+}
+/*# sourceMappingURL=main.css.map */
