@@ -99,7 +99,7 @@
   margin-bottom: 0px;
 }
 
-.texts .note .content {
+.texts .note .todo_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,18 +111,24 @@
           justify-content: center;
 }
 
-.texts .note .content .check {
+.texts .note .todo_left .todo_cb {
   width: 15px;
   height: 15px;
+  margin-right: 10px;
 }
 
-.texts .note .content .check:checked ~ .note-text {
+.texts .note .todo_left .todo_cb:checked ~ .todo_text {
   text-decoration: line-through;
   color: gray;
 }
 
-.texts .note .content .note-text {
-  margin-left: 5px;
+.texts .note .todo_left .edit_input {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #9c61d6;
+  width: 100%;
+  height: 20px;
+  font-size: 18px;
 }
 
 .far {
@@ -138,28 +144,5 @@
 .far:hover {
   background-color: #9c61d6;
   color: #fff;
-}
-
-.todo_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.todo_left input {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-}
-
-.todo_left input:checked ~ .todo_text {
-  text-decoration: line-through;
-  color: gray;
 }
 /*# sourceMappingURL=main.css.map */

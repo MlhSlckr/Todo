@@ -64,22 +64,26 @@
     &:last-child {
       margin-bottom: 0px;
     }
-    .content {
+    .todo_left {
       display: flex;
       align-items: center;
       justify-content: center;
-      .check {
+      .todo_cb {
         width: 15px;
         height: 15px;
-        &:checked {
-          ~ .note-text {
-            text-decoration: line-through;
-            color: rgb(128, 128, 128);
-          }
+        margin-right: 10px;
+        &:checked ~ .todo_text {
+          text-decoration: line-through;
+          color: rgb(128, 128, 128);
         }
       }
-      .note-text {
-        margin-left: 5px;
+      .edit_input {
+        outline: none;
+        border-radius: 3px;
+        border: 1px solid rgb(156, 97, 214);
+        width: 100%;
+        height: 20px;
+        font-size: 18px;
       }
     }
   }
@@ -95,20 +99,5 @@
   &:hover {
     background-color: rgb(156, 97, 214);
     color: #fff;
-  }
-}
-
-.todo_left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  input {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    &:checked ~ .todo_text {
-      text-decoration: line-through;
-      color: rgb(128, 128, 128);
-    }
   }
 }
