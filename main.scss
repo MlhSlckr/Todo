@@ -70,18 +70,20 @@
       align-items: center;
       justify-content: center;
       position: relative;
+
       .todo_cb {
         width: 15px;
         height: 15px;
         margin-right: 10px;
-        &:checked ~ .todo_text {
-          text-decoration: line-through;
-          color: rgb(128, 128, 128);
+
+        &:checked ~ .note {
+          background-color: #000;
         }
       }
     }
     .todo_right {
       position: relative;
+      transition: 200ms all;
     }
   }
 }
@@ -134,4 +136,13 @@
   opacity: 0;
   pointer-events: none;
   font-size: 20px;
+}
+
+.completed {
+  background-color: #9fff9f !important;
+  text-decoration: line-through;
+  .todo_right {
+    opacity: 0;
+    pointer-events: none;
+  }
 }

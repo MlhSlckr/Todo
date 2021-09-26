@@ -119,13 +119,14 @@
   margin-right: 10px;
 }
 
-.texts .note .todo_left .todo_cb:checked ~ .todo_text {
-  text-decoration: line-through;
-  color: gray;
+.texts .note .todo_left .todo_cb:checked ~ .note {
+  background-color: #000;
 }
 
 .texts .note .todo_right {
   position: relative;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
 }
 
 .far {
@@ -174,5 +175,15 @@
   opacity: 0;
   pointer-events: none;
   font-size: 20px;
+}
+
+.completed {
+  background-color: #9fff9f !important;
+  text-decoration: line-through;
+}
+
+.completed .todo_right {
+  opacity: 0;
+  pointer-events: none;
 }
 /*# sourceMappingURL=main.css.map */
