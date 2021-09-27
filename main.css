@@ -78,6 +78,7 @@
   margin-top: 50px;
   padding: 20px;
   border-radius: 10px;
+  position: relative;
 }
 
 .texts .note {
@@ -94,10 +95,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.texts .note:last-child {
-  margin-bottom: 0px;
 }
 
 .texts .note .todo_left {
@@ -185,5 +182,17 @@
 .completed .todo_right {
   opacity: 0;
   pointer-events: none;
+}
+
+.clear {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1.2px;
+  position: absolute;
+  bottom: 10px;
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -54,6 +54,7 @@
   margin-top: 50px;
   padding: 20px;
   border-radius: 10px;
+  position: relative;
   .note {
     padding: 8px 12px;
     background-color: #fff;
@@ -62,9 +63,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &:last-child {
-      margin-bottom: 0px;
-    }
     .todo_left {
       display: flex;
       align-items: center;
@@ -145,4 +143,16 @@
     opacity: 0;
     pointer-events: none;
   }
+}
+
+.clear {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 1.2px;
+  position: absolute;
+  bottom: 10px;
+  display: none;
 }

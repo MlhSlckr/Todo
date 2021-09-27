@@ -1,6 +1,7 @@
 const input = document.querySelector(".input");
 const add = document.querySelector(".add");
 const texts = document.querySelector(".texts");
+const clearAll = document.querySelector(".clear");
 
 let removeBtns;
 let inputValue;
@@ -15,6 +16,9 @@ add.addEventListener("click", () => {
   } else {
     createDiv();
     input.value = "";
+  }
+  if (texts.childElementCount > 1) {
+    clearAll.style.display = "block";
   }
 });
 
@@ -94,3 +98,13 @@ const completed = (e) => {
   const todo = e.target.parentElement.parentElement;
   todo.classList.toggle("completed");
 };
+
+function clearAllItems() {
+  const notes = document.querySelectorAll(".note");
+  notes.forEach((note) => {
+    note.remove();
+    clearAll.style.display = "none";
+  });
+}
+
+clearAll.addEventListener("click", clearAllItems);
