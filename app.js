@@ -7,7 +7,7 @@ let removeBtns;
 let inputValue;
 let isCompleted;
 
-add.addEventListener("click", () => {
+function todo() {
   if (input.value === "") {
     input.style.border = "1px solid red";
     setTimeout(() => {
@@ -20,7 +20,15 @@ add.addEventListener("click", () => {
   if (texts.childElementCount > 1) {
     clearAll.style.display = "block";
   }
+}
+
+input.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) {
+    todo();
+  }
 });
+
+add.addEventListener("click", todo);
 
 const createDiv = () => {
   const todoDiv = document.createElement("div");
@@ -80,6 +88,11 @@ const createDiv = () => {
 const deleteTodo = (e) => {
   const todo = e.target.parentElement.parentElement;
   todo.remove();
+  console.log(texts.innerHTML.length);
+  if (texts.innerHTML.length === 73) {
+    console.log("q");
+    clearAll.style.display = "none";
+  }
 };
 
 const edit = (e) => {
